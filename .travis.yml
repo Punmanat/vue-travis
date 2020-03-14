@@ -6,4 +6,4 @@ before_install:
     - docker build -t patrick3dev/vue-travis -f Dockerfile.dev .
 
 script:
-    - docker fun patrick3dev/vue-travis npm run test -- --coverage
+    - docker run patrick3dev/vue-travis npm run test -- --coverage
